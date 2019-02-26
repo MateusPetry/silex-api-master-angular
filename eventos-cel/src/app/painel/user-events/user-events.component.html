@@ -1,0 +1,17 @@
+<div class="row">
+  <h1>Meus Eventos</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm" *ngFor="let event of events">
+      <div class="card" style="width: 18rem;">
+        <img src="http://lorempixel.com/400/200/people/" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{event.title}}</h5>
+          <p class="card-text">{{event.description}}</p>
+          <a class="btn btn-primary" [routerLink]="[event.id]">Ver evento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
